@@ -1,0 +1,12 @@
+{
+    "enable_autodetect": false,
+    "update_every": 2,
+    "nodes": [
+        {
+            "name": "node-1",
+            "hostname": "clustercode-admin:8080",
+            "update_every": 2,
+            "progress_api": "/api/v1/progress/ffmpeg"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "modules_enable_all": false,
+
+  "modules": {
+    "named": {
+      "enabled": false
+    },
+    "sma_webbox": {
+      "enabled": false
+    },
+    "snmp": {
+      "enabled": false
+    },
+    "clustercode": {
+      "enabled": true
+    }
+  }
+}
