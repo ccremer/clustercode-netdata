@@ -9,7 +9,7 @@ docker run --rm --privileged multiarch/qemu-user-static:register --reset
 
 # Build runtime images
 for ARCH in armhf amd64 i386 aarch64; do
-     docker build --build-arg ARCH="${ARCH}-edge" --tag "${REPOSITORY}:${ARCH}${VERSION}" --file Dockerfile ./
+     docker build --build-arg ARCH="${ARCH}" --tag "${REPOSITORY}:${ARCH}${VERSION}" --file Dockerfile ./
 done
 docker tag "${REPOSITORY}:amd64" "${REPOSITORY}:latest"
 
